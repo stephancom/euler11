@@ -121,7 +121,7 @@ def solve(matrix, size, group_size)
 		diagonal_product = product if product > diagonal_product
 
 		# and then as long as we have that group handy, 
-		# just reverse it to compute the other direction (lower right to upper left)
+		# just reverse it to compute the other direction (lower left to upper right)
 		product = max_product_in_diagonals(rowgroup.reverse)
 		diagonal_product = product if product > diagonal_product
 	end
